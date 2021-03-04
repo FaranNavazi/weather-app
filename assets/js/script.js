@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
     if (!searchValue) {
       return;
     }
-    var endpoint = `http://api.openweathermap.org/data/2.5/forecast?q=${searchValue}&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial`;
+    var endpoint = `https://api.openweathermap.org/data/2.5/forecast?q=${searchValue}&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial`;
     fetch(endpoint)
       .then((res) => res.json())
       .then((data) => {
@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
             var imgEl = document.createElement('img');
             imgEl.setAttribute(
               'src',
-              `http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`
+              `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`
             );
             var p1El = document.createElement('p');
             p1El.classList.add('card-text');
@@ -78,7 +78,7 @@ window.addEventListener('load', function () {
   // Helper function to fetch and display the UV index
   function getUVIndex(lat, lon) {
     fetch(
-      `http://api.openweathermap.org/data/2.5/uvi?appid=d91f911bcf2c0f925fb6535547a5ddc9&lat=${lat}&lon=${lon}`
+      `https://api.openweathermap.org/data/2.5/uvi?appid=d91f911bcf2c0f925fb6535547a5ddc9&lat=${lat}&lon=${lon}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -153,7 +153,7 @@ window.addEventListener('load', function () {
         var imgEl = document.createElement('img');
         imgEl.setAttribute(
           'src',
-          `http://openweathermap.org/img/w/${data.weather[0].icon}.png`
+          `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
         );
 
         // Append all the content that we created
