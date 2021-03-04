@@ -1,7 +1,32 @@
-# Weather-Dashboard-app
+# Weather Dashboard
 
-[Click to got to weather-app page]( https://adrianstorr.github.io/Weather-Dashboard-app/)
+This app lets you see the weather in different cities!
 
-This is my weather application: The application works when the user enters a city to search. Once the user selects the city the  api linked in js file will link information back to html displaying the current weather of selection. Along with the current weather the html will display humidity, wind, and UV index which were all linked together with weather api.
+## Description
 
-![display screenshot of webpage](./Assets/images/weather-app.png)
+[Deployment](https://farannavazi.github.io/weather-app/)
+
+This is a weather app that helps you find the current weather and forecasted weather for your desired city.
+
+![Screenshot](./assets/ScreenShot.png)
+
+## Technologies
+
+- HTML
+- Bootstrap
+- Javascript
+- jQuery
+
+## Installation
+
+No installation needed.
+
+## Usage
+
+You enter the name of the city you want to search for in the search field. Once you submit, you will see the current and forecast weather of the city. You can click the previous cities you searched on for their weather too. Your searched cities are saved to your local storage for convience use.
+
+## Credits
+
+Faran Navazi
+[Github](https://github.com/FaranNavazi)
+[LinkedIn](https://www.linkedin.com/in/farannavazi/)
